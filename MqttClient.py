@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 # encoding:utf-8
 
+# 需要安装mqtt
+# pip install paho-mqtt
 import paho.mqtt.client as mqtt
 import socket
 import json
 import logging
 import threading
 
+# 设置日志文件和日志级别
 logging.basicConfig(filename='mqttClientPython3.log', level=logging.DEBUG)
 
 # 服务器IP
